@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+:root {
+
+  --app-color-text: #0f4674;
+  --app-color-text-rgb: rgb(15, 70, 116);
+  --app-color-text-tint: #145c97;
+  --app-color-text-dark: #0a3252;
+  --app-color-text-shade: #051725;
+
+  --app-color-primary: #9a949b;
+  --app-color-primary-tint: #cac4cb;
+  --app-color-primary-dark: #8e898e;
+  --app-color-primary-shade: #5e595e;
+
+  --app-color-primary-90: rgb(154, 148, 155, 0.9);
+  --app-color-primary-70: rgb(154, 148, 155, 0.7);
+  --app-color-primary-50: rgb(154, 148, 155, 0.5);
+  --app-color-primary-30: rgb(154, 148, 155, 0.3);
+  --app-color-primary-10: rgb(154, 148, 155, 0.1);
+
+  --app-color-secondary: #C4A582;
+  --app-color-secondary-rgb: rgb(196, 165, 130);
+  --app-color-secondary-tint: #e4c199;
+  --app-color-secondary-dark: #a3896b;
+  --app-color-secondary-shade: #74614c;
+
+  --app-color-secondary-90: rgb(196, 165, 130, 0.9);
+  --app-color-secondary-70: rgb(196, 165, 130, 0.7);
+  --app-color-secondary-50: rgb(196, 165, 130, 0.5);
+  --app-color-secondary-30: rgb(196, 165, 130, 0.3);
+  --app-color-secondary-10: rgb(196, 165, 130, 0.1);
+
+  --app-color-light: #ebebeb;
+  --app-color-light-tint: #eeeeee;
+  --app-color-light-shade: #d0d0d0;
+  --app-color-light-constrast: #000000;
+
+  --app-color-medium: #bbbbbb;
+  --app-color-medium-tint: #cccccc;
+  --app-color-medium-shade: #a0a0a0;
+  --app-color-medium-constrast: #000000;
+
+  --app-color-dark: #414141;
+  --app-color-dark-tint: #5e5e5e;
+  --app-color-dark-shade: #1d1d1d;
+  --app-color-dark-constrast: #ffffff;
+
+
+  --app-font-mont: 'Montserrat', serif;
+  --app-font-dm-text: 'DM Serif Text', serif;
+  --app-font-dm-display: 'DM Serif Display', serif;
+
+  --app-color-sucess: #2b990a;
+  --app-color-sucess-contrast: #000000;
+  --app-color-warning: #928d02;
+  --app-color-warning-contrast: #000000;
+  --app-color-danger: #a82200;
+  --app-color-danger-shade: #7e1900;
+  --app-color-danger-contrast: #ffffff;
+}

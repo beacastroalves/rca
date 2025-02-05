@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+@import url(./variaveis.css);
+
+header {
+  display: none;
+  padding: 1rem ;
+  background-color: var(--app-color-primary);
+  color: var(--app-color-secondary);
+}
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  font-size: 0.750rem;
+}
+
+header ul li {
+  list-style: none;
+  padding: 0.5rem;
+}
+
+header ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  background-color: var(--app-color-primary);
+  border-radius: 0.5rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h1, p {
+  text-align: center;
+  color: var(--app-color-text);
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  background-image: var(--app-color-primary-tint);
+  padding: 3rem 1rem 4rem 1rem;
+}
+
+.home article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.home article h1 {
+  padding: 1.2rem 0;
+}
+
+.home article h1 span {
+  color: var(--app-color-secondary);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.home div {
+  display: flex;
+  max-width: 90%;
+  color: var(--app-color-secondary-dark);
+  padding: 1rem 0;
+  gap: 2rem;
+}
+
+.home div p {
+  display: flex;
+  align-items: center;
+}
+
+.home div svg {
+  margin-right: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 710px) {
+  .home {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  article {
+    padding: 1rem;
+    flex: 1;
+  }
+
+  .home div p {
+    align-items: center;
+  }
+
+  .home div svg {
+    margin-right: 1rem;
+  }
+}

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+@import url(./variaveis.css);
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: var(--app-font-mont);
+  min-width: 330px;
+  width: 100vw;
+  color: var(--app-color-secondary);
+}
