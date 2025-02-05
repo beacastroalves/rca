@@ -35,12 +35,10 @@ header ul li:hover {
  */
 
 
-
 .home {
   display: flex;
   flex-direction: column;
-  background-image: var(--app-color-primary-tint);
-  padding: 3rem 1rem 4rem 1rem;
+  padding: 3rem 0 4rem 0;
 }
 
 .home article {
@@ -48,7 +46,7 @@ header ul li:hover {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 0.5rem;
+  padding: 0 1rem;
 }
 
 .home article h1 {
@@ -93,7 +91,42 @@ header ul li:hover {
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
 }
 
+.home #home-2 {
+  padding: 0;
+}
 
+.home article picture img {
+  margin: 0 -2rem;
+  width: 100%;
+}
+
+.home #home-2 h4 {
+  background-color: var(--app-color-primary-30);
+  padding: 0.25rem 0;
+  width: 72%;
+  font-size: 0.875rem;
+}
+
+.home #home-2 h2 {
+  font-size: 1.75rem;
+  width: 80%;
+  margin: 0.5rem 0 0.25rem 0;
+}
+
+.home #home-2 .btn {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color:  var(--app-color-primary-shade);
+  border: 1px solid var(--app-color-primary-shade);
+  text-transform: uppercase;
+  padding: 0.75rem 1rem;
+  border-radius: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.home #home-2 .btn:hover {
+  background-color: var(--app-color-primary-shade);
+}
 
 
 
@@ -106,6 +139,8 @@ header ul li:hover {
 @media only screen and (min-width: 710px) {
   .home {
     flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     gap: 2rem;
   }
 
@@ -122,5 +157,32 @@ header ul li:hover {
 
   .home div svg {
     margin-right: 1rem;
+  }
+
+  .home #home-2 {
+    align-items: center;
+    text-align: center;
+    min-width: 432px;
+  }
+
+  .home #home-2 h4 {
+    font-size: 1rem;
+  }
+
+  .home #home-2 h2 {
+    font-size: 2.125rem;
+    width: 70%;
+    margin: 0.5rem 0 0.25rem 0;
+  }
+
+  .home #home-2 .btn {
+    font-size: 1.125rem;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .home #home-2 .btn:hover {
+    background-color: ;
+    color: var(--app-color-primary-shade);
   }
 }

@@ -11,9 +11,10 @@
 
 html, body {
   font-family: var(--app-font-mont);
-  min-width: 330px;
+  min-width: 350px;
   width: 100vw;
   color: var(--app-color-secondary);
+  background-color: var(--app-color-light-tint);
 }
 
 h1 {
