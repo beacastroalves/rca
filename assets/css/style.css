@@ -4,6 +4,10 @@
 
 header {
   display: none;
+}
+/* Possível Header 
+ header {
+  display: none;
   padding: 1rem ;
   background-color: var(--app-color-primary);
   color: var(--app-color-secondary);
@@ -28,14 +32,9 @@ header ul li:hover {
   border-radius: 0.5rem;
 }
 
-h1 {
-  font-size: 1.5rem;
-}
+ */
 
-h1, p {
-  text-align: center;
-  color: var(--app-color-text);
-}
+
 
 .home {
   display: flex;
@@ -48,7 +47,8 @@ h1, p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 2rem;
+  text-align: center;
+  gap: 0.5rem;
 }
 
 .home article h1 {
@@ -64,7 +64,7 @@ h1, p {
   display: flex;
   max-width: 90%;
   color: var(--app-color-secondary-dark);
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   gap: 2rem;
 }
 
@@ -78,7 +78,20 @@ h1, p {
 }
 
 
+.home a {
+  width: 100%;
+  margin-bottom: 4rem;
+}
 
+.home a:hover {
+  background-color: var(--app-color-secondary-dark);
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+}
+
+.home a:active {
+  background-color: var(--app-color-secondary-shade);
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+}
 
 
 
@@ -96,7 +109,9 @@ h1, p {
     gap: 2rem;
   }
 
-  article {
+  .home article {
+    align-items: start;
+    text-align: left;
     padding: 1rem;
     flex: 1;
   }

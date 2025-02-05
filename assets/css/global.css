@@ -15,3 +15,32 @@ html, body {
   width: 100vw;
   color: var(--app-color-secondary);
 }
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h1, p {
+  color: var(--app-color-text);
+}
+
+ a {
+  background-color: var(--app-color-secondary);
+  color: var(--app-color-light);
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+ a:hover {
+  background-color: var(--app-color-secondary-dark);
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+}
+
+ a:active {
+  background-color: var(--app-color-secondary-shade);
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+}
