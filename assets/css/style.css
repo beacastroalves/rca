@@ -5,7 +5,8 @@
 header {
   display: none;
 }
-/* Possível Header 
+
+/* Possível Header
  header {
   display: none;
   padding: 1rem ;
@@ -32,13 +33,13 @@ header ul li:hover {
   border-radius: 0.5rem;
 }
 
- */
+*/
 
 
 .home {
   display: flex;
   flex-direction: column;
-  padding: 3rem 0 4rem 0;
+  padding: 2rem 0 4rem 0;
 }
 
 .home article {
@@ -46,65 +47,72 @@ header ul li:hover {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 0 1rem;
+  gap: 1.25rem;
+  padding: 1rem;
 }
 
-.home article h1 {
-  padding: 1.2rem 0;
+.home #home-1 h1 {
+  padding-top: 1.2rem;
 }
 
-.home article h1 span {
+.home #home-1 h1 span {
   color: var(--app-color-secondary);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-.home div {
-  display: flex;
-  max-width: 90%;
-  color: var(--app-color-secondary-dark);
-  padding: 1.5rem 0;
-  gap: 2rem;
+.home #home-1 .separator {
+  width: 230px;
+  border-bottom: 3px solid var(--app-color-secondary);
+  margin: 0.75rem 0;
 }
 
-.home div p {
+.home #home-1 .date-and-time {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  padding: 1.5rem 0;
+  gap: 1rem;
+}
+
+.home #home-1 .date-and-time p {
   display: flex;
   align-items: center;
 }
 
-.home div svg {
+.home #home-1 .date-and-time svg {
   margin-right: 0.5rem;
 }
 
-
-.home a {
+.home #home-1 a {
   width: 100%;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
-.home a:hover {
+.home #home-1 a:hover {
   background-color: var(--app-color-secondary-dark);
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
 }
 
-.home a:active {
+.home #home-1 a:active {
   background-color: var(--app-color-secondary-shade);
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
 }
 
+
+/* Article home-2 */
 .home #home-2 {
   padding: 0;
 }
 
-.home article picture img {
-  margin: 0 -2rem;
+.home #home-2 img {
   width: 100%;
 }
 
 .home #home-2 h4 {
   background-color: var(--app-color-primary-30);
-  padding: 0.25rem 0;
-  width: 72%;
   font-size: 0.875rem;
+  width: 72%;
+  padding: 0.25rem 0;
 }
 
 .home #home-2 h2 {
@@ -114,18 +122,20 @@ header ul li:hover {
 }
 
 .home #home-2 .btn {
+  color:  var(--app-color-primary-shade);
   font-size: 0.875rem;
   font-weight: bold;
-  color:  var(--app-color-primary-shade);
-  border: 1px solid var(--app-color-primary-shade);
   text-transform: uppercase;
   padding: 0.75rem 1rem;
-  border-radius: 1.25rem;
   margin-bottom: 1rem;
+  border: 1px solid var(--app-color-primary-shade);
+  border-radius: 1.25rem;
 }
 
 .home #home-2 .btn:hover {
   background-color: var(--app-color-primary-shade);
+  color: var(--app-color-light-tint);
+  transition: 0.5s;
 }
 
 
@@ -136,23 +146,30 @@ header ul li:hover {
 
 
 
-@media only screen and (min-width: 710px) {
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 860px) {
   .home {
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    gap: 2rem;
   }
 
   .home article {
     align-items: start;
+    gap: 1rem;
     text-align: left;
-    padding: 1rem;
+    padding: 1.5rem;
     flex: 1;
-  }
-
-  .home div p {
-    align-items: center;
   }
 
   .home div svg {
@@ -160,29 +177,23 @@ header ul li:hover {
   }
 
   .home #home-2 {
+    padding-top: 2rem;
+    background-color: var(--app-color-primary-10);
     align-items: center;
     text-align: center;
     min-width: 432px;
-  }
-
-  .home #home-2 h4 {
-    font-size: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
   }
 
   .home #home-2 h2 {
-    font-size: 2.125rem;
     width: 70%;
-    margin: 0.5rem 0 0.25rem 0;
+    margin: 0.25rem 0;
   }
 
   .home #home-2 .btn {
-    font-size: 1.125rem;
     border-radius: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
   }
 
-  .home #home-2 .btn:hover {
-    background-color: ;
-    color: var(--app-color-primary-shade);
-  }
 }
