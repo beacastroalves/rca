@@ -42,12 +42,13 @@ header ul li:hover {
 
 
 .home {
-  display: flex;
-  flex-direction: column;
+
   padding: 2rem 0 1rem 0;
 }
 
 section {
+  display: flex;
+  flex-direction: column;
   padding: 1rem 0;
 }
 
@@ -193,7 +194,7 @@ article {
     margin: 0 auto;
   }
 
-  .home {
+  .home, .benefits, .for-whom, .about {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -233,4 +234,13 @@ article {
     margin-bottom: 0.75rem;
   }
 
+  .feedback {
+    max-width: 700px;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .about {
+    padding: 0;
+  }
 }
