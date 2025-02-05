@@ -7,6 +7,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  user-select: none;
 }
 
 html, body {
@@ -45,3 +46,15 @@ a:active {
   background-color: var(--app-color-secondary-shade);
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
 }
+
+
+.fb-img {
+  width: 80%;
+  box-shadow: 1px 1px 14px 2px rgba(0, 0, 0, 0.2);
+}
+
+ul, li {
+  padding: 1rem;
+}
+
+
