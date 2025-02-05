@@ -243,4 +243,8 @@ article {
   .about {
     padding: 0;
   }
+
+  .about-us .about.nat {
+    flex-direction: row-reverse;
+  }
 }
