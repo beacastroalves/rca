@@ -2,45 +2,10 @@
 
 @import url(./variaveis.css);
 
-header {
-  display: none;
-}
-
-/* Possível Header
- header {
-  display: none;
-  padding: 1rem ;
-  background-color: var(--app-color-primary);
-  color: var(--app-color-secondary);
-}
-
-header ul {
-  display: flex;
-  justify-content: space-around;
-  font-weight: bold;
-  font-size: 0.750rem;
-}
-
-header ul li {
-  list-style: none;
-  padding: 0.5rem;
-}
-
-header ul li:hover {
-  text-decoration: underline;
-  cursor: pointer;
-  background-color: var(--app-color-primary);
-  border-radius: 0.5rem;
-}
-
-*/
-
 main {
   width: 100vw;
   margin: 0 auto;
   min-width: 320px;
-
-  /* Perguntar Opnião */
 }
 
 section {
@@ -70,6 +35,14 @@ section article a {
   margin: 2.5rem -0.5rem 2rem -0.5rem;
 }
 
+.separator.mini {
+  align-self: center;
+  background-image: none;
+  background-color: var(--app-color-secondary);
+  width: 200px;
+  margin: 0.75rem 0;
+}
+
 /* Configurações da imagem de fundo nas imagens com a classe "with-backg(background)" */
 
 .with-backg  {
@@ -88,8 +61,7 @@ section article a {
 
 /* Configurações da primeira section: class "home" */
 
-.home,
-.mid {
+.home {
   padding: 2rem 0 1rem 0;
 
 
@@ -101,14 +73,6 @@ section article a {
         color: var(--app-color-secondary);
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
       }
-    }
-
-    .separator {
-      align-self: center;
-      background-image: none;
-      background-color: var(--app-color-secondary);
-      width: 200px;
-      margin: 0.75rem 0;
     }
 
     .date-and-time {
@@ -188,13 +152,25 @@ section article a {
   }
 }
 
-/* Configurações da primeira section: class "benefits" */
+/* Configurações da section: class "benefits" */
 .benefits {
   padding: 0;
   gap: 0.75rem;
+  text-align: left;
+
+  #benefits-2 {
+    align-items: start;
+    gap: 1rem;
+    text-align: justify;
+    padding: 0 1.5rem;
+
+    h2 {
+      text-align: left;
+    }
+  }
 }
 
-/* Configurações da primeira section: class "for-whom" */
+/* Configurações da section: class "for-whom" */
 .for-whom {
   padding: 0;
   gap: 0.75rem;
@@ -207,25 +183,14 @@ section article a {
 
 
 
-/* Configurações da primeira section: class "about-us" */
+/* Configurações da section: class "about-us" */
 .about-us {
   .about article {
     margin-bottom: 2rem;
-  }
-}
 
-
-
-/* Configurações da primeira section: class "mid" */
-
-.mid {
-  max-width: 510px;
-  margin: 0 auto;
-
-  #home-1 {
-    h1 {
-      min-width: 258px;
-      margin: 0 auto;
+    p {
+      padding: 0 1rem;
+      text-align: justify;
     }
   }
 }
@@ -234,6 +199,22 @@ section article a {
 
 
 
+/* Configurações da section: class "faq" */
+
+.faq {
+  ul {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  li h3 {
+    padding: 1rem;
+  }
+
+  p {
+    margin-left: 1rem;
+  }
+}
 
 
 
@@ -250,21 +231,24 @@ section article a {
 
 
 
+
+
+
+/* Configurações para telas maior que 490px de largura, celulares maiores e tablets pequenos */
 
 @media only screen and (min-width: 490px) {
   main {
     max-width: 521px;
     margin: 0 auto;
     padding-top: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    box-shadow: 0px 0px 30px 16px rgba(var(--app-color-secondary-rgb), 0.3);
   }
 
-/* Perguntar Opnião */
-  /* main {
-    box-shadow: 0px 0px 30px 16px rgb(var(--app-color-secondary-rgb), 0.3);
-  }
   .separator {
-    margin: 2.5rem 0 2rem 0;
-  } */
+    margin: 2.5rem -2rem 2rem -2rem;
+  }
 
   section article {
     gap: 1rem;
@@ -300,40 +284,11 @@ section article a {
         border-radius: 0.5rem;
       }
   }
-
-
-  .benefits article#benefits-2 {
-    align-items: start;
-    gap: 1rem;
-    text-align: justify;
-    padding: 1.5rem;
-
-    h2 {
-      text-align: center;
-    }
-  }
-
-  .mid {
-    max-width: 520px;
-    margin: 0 auto;
-    padding: 2rem 0 0 0;
-
-    article {
-      padding: 0;
-    }
-
-    h1 {
-      min-width: 475px;
-    }
-
-    .date-and-time {
-      font-size: 1.125rem;
-    }
-  }
 }
 
 
 
+/* Configurações para telas maior que 870px de largura, tablets e monitores */
 
 @media only screen and (min-width: 870px) {
   main {
@@ -358,12 +313,22 @@ section article a {
     align-items: start;
     gap: 1rem;
     text-align: left;
-    padding: 1.5rem;
+    padding: 0 1.5rem;
     flex: 1;
+  }
+
+  .benefits article#benefits-2 {
+    margin-bottom: 2rem;
   }
 
   .home div svg {
     margin-right: 1rem;
+  }
+
+
+  .separator.mini {
+    margin: 0 auto;
+    margin-top: 1rem;
   }
 
   .home {
@@ -377,6 +342,7 @@ section article a {
       }
     }
   }
+
 
   .feedback {
     max-width: 700px;
