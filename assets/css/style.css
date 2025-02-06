@@ -277,6 +277,14 @@ section article a {
     margin-right: 1rem;
   }
 
+  .home #home-1 h1 {
+    text-align: start;
+  }
+
+  .home #home-1 .separator {
+    align-self: self-start;
+  }
+
   .home #home-2 {
     padding-top: 2rem;
     background-color: var(--app-color-primary-10);
