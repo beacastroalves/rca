@@ -28,6 +28,15 @@ h1, p {
   color: var(--app-color-text);
 }
 
+h2 {
+  text-align: center;
+  margin: 1rem 0;
+  background: var(--app-color-secondary);
+  background: radial-gradient(circle farthest-side at center center, var(--app-color-secondary) 0%, var(--app-color-secondary-shade) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 a {
   background-color: var(--app-color-secondary);
   color: var(--app-color-light);
@@ -37,6 +46,7 @@ a {
   padding: 0.75rem 1.5rem;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
   border-radius: 0.625rem;
+  margin: 1.5rem 0;
 }
 
 a:hover {
