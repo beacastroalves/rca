@@ -5,11 +5,11 @@
 
 :root {
 
-  --app-color-text: #0f4674;
-  --app-color-text-rgb: rgb(15, 70, 116);
-  --app-color-text-tint: #145c97;
-  --app-color-text-dark: #0a3252;
-  --app-color-text-shade: #051725;
+  --app-color-text: #616161;
+  --app-color-text-rgb:  97, 97, 97;
+  --app-color-text-tint: #919191;
+  --app-color-text-dark: #414141;
+  --app-color-text-shade: #212121;
 
   --app-color-primary: #9a949b;
   --app-color-primary-tint: #cac4cb;

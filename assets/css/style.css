@@ -9,6 +9,7 @@ header {
 main {
   width: 95vw;
   margin: 0 auto;
+  min-width: 320px;
 }
 
 /* Possível Header
@@ -166,6 +167,29 @@ article {
 }
 
 
+/* section benefits */
+
+
+
+
+.with-backg  {
+  background: linear-gradient(135deg, var(--app-color-primary-30), var(--app-color-primary-50)) ;
+  align-items: center;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+
+.with-backg img {
+  width: 75%;
+}
+
+
+.for-whom article#for-whom-1 {
+  align-items: start;
+  text-align: justify;
+  gap: 1rem;
+  padding: 1.5rem;
+}
 
 
 
@@ -186,9 +210,27 @@ article {
 
 
 
+@media only screen and (min-width: 570px) {
+  main {
+    max-width: 521px;
+    margin: 0 auto;
+  }
+
+  section article {
+    align-items: start;
+    gap: 1rem;
+    text-align: left;
+    padding: 1.5rem;
+    flex: 1;
+  }
+}
 
 
-@media only screen and (min-width: 860px) {
+
+
+
+
+@media only screen and (min-width: 870px) {
   main {
     max-width: 1024px;
     margin: 0 auto;
