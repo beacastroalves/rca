@@ -39,6 +39,8 @@ main {
   width: 95vw;
   margin: 0 auto;
   min-width: 320px;
+
+  /* Perguntar Opnião */
 }
 
 section {
@@ -77,6 +79,7 @@ section article a {
   margin: 1rem;
   box-shadow: 0px 20px 32px 2px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
+  padding: 1rem;
 }
 
 .with-backg img {
@@ -93,7 +96,6 @@ section article a {
 /* Article home-1 */
   #home-1 {
     h1 {
-      padding-top: 1.2rem;
 
       span {
         color: var(--app-color-secondary);
@@ -112,8 +114,8 @@ section article a {
     .date-and-time {
       display: flex;
       flex-direction: column;
-      padding: 1.5rem 0;
-      gap: 1rem;
+      padding: 1.2rem 0;
+      gap: 0.825rem;
     }
 
     .date-and-time p {
@@ -229,6 +231,14 @@ section article a {
 
 
 
+/* Perguntar Opnião */
+/* main {
+  
+  box-shadow: 0px 0px 30px 16px rgb(var(--app-color-secondary-rgb), 0.3);
+}
+.separator {
+ margin: 2.5rem 0 2rem 0;
+} */
 
 
 
@@ -246,19 +256,21 @@ section article a {
 
 
 
-
-
-
-@media only screen and (min-width: 570px) {
+@media only screen and (min-width: 490px) {
   main {
     max-width: 521px;
     margin: 0 auto;
+    padding-top: 2rem;
   }
 
   section article {
     gap: 1rem;
     padding: 1.5rem;
     flex: 1;
+  }
+
+  .home, .benefits, .for-whom, .about {
+    padding: 0 1rem;
   }
 
   .benefits article#benefits-2 {
@@ -300,11 +312,16 @@ section article a {
     margin: 0 auto;
   }
 
+  section article a {
+    align-self: self-start;
+  }
+
   .home, .benefits, .for-whom, .about {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     gap: 1rem;
+    padding: 0 2rem;
   }
 
   .home article,
@@ -353,7 +370,6 @@ section article a {
     }
 
   }
-
 
   .feedback {
     max-width: 700px;
