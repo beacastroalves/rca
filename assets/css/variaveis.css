@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
 
@@ -50,9 +49,9 @@
   --app-color-dark-constrast: #ffffff;
 
 
-  --app-font-mont: 'Montserrat', serif;
-  --app-font-dm-text: 'DM Serif Text', serif;
-  --app-font-dm-display: 'DM Serif Display', serif;
+  --app-font-mont: 'Montserrat', sans-serif;
+  --app-font-noto: 'Noto Serif', serif;
+
 
   --app-color-sucess: #2b990a;
   --app-color-sucess-contrast: #000000;
