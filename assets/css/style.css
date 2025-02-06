@@ -293,6 +293,7 @@ section article a {
   main {
     max-width: 1024px;
     margin: 0 auto;
+    padding: 2.5rem 0 1rem 0;
   }
 
   section article a {
@@ -338,6 +339,9 @@ section article a {
     }
   }
 
+  .separator {
+    margin: 2.5rem 0 2rem 0;
+  }
 
   .feedback {
     max-width: 700px;
