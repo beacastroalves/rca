@@ -325,9 +325,6 @@ section article a {
   }
 
 
-  .separator.mini {
-    margin: 2.5rem auto;
-  }
 
   .home {
     #home-1 {
@@ -348,11 +345,15 @@ section article a {
     margin: 0 auto;
   }
 
-  .about {
-    padding: 0;
-  }
-
   .about-us .about.reverse {
     flex-direction: row-reverse;
+  }
+
+  .about-us .separator.mini {
+    margin: 2.5rem auto;
+  }
+
+  .about {
+    padding: 0 1rem;
   }
 }
