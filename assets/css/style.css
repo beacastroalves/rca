@@ -36,7 +36,7 @@ header ul li:hover {
 */
 
 main {
-  width: 95vw;
+  width: 100vw;
   margin: 0 auto;
   min-width: 320px;
 
@@ -145,7 +145,9 @@ section article a {
 
 /* Article home-2 */
   #home-2 {
-    padding: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
 
     h4 {
       background-color: var(--app-color-primary-30);
@@ -231,14 +233,7 @@ section article a {
 
 
 
-/* Perguntar Opnião */
-/* main {
-  
-  box-shadow: 0px 0px 30px 16px rgb(var(--app-color-secondary-rgb), 0.3);
-}
-.separator {
- margin: 2.5rem 0 2rem 0;
-} */
+
 
 
 
@@ -263,6 +258,14 @@ section article a {
     padding-top: 2rem;
   }
 
+/* Perguntar Opnião */
+  /* main {
+    box-shadow: 0px 0px 30px 16px rgb(var(--app-color-secondary-rgb), 0.3);
+  }
+  .separator {
+    margin: 2.5rem 0 2rem 0;
+  } */
+
   section article {
     gap: 1rem;
     padding: 1.5rem;
@@ -272,6 +275,32 @@ section article a {
   .home, .benefits, .for-whom, .about {
     padding: 0 1rem;
   }
+
+  section article#home-2 {
+      padding-top: 2rem;
+      background-color: var(--app-color-primary-10);
+      align-items: center;
+      text-align: center;
+      min-width: 432px;
+      margin: 1rem;
+      border-radius: 0.5rem;
+      margin-bottom: 3rem;
+
+      h2 {
+        width: 70%;
+        margin: 0.25rem 0;
+      }
+
+      .btn {
+        border-radius: 1.5rem;
+        margin-bottom: 0.75rem;
+      }
+
+      img {
+        border-radius: 0.5rem;
+      }
+  }
+
 
   .benefits article#benefits-2 {
     align-items: start;
@@ -347,28 +376,6 @@ section article a {
         align-self: self-start;
       }
     }
-
-    #home-2 {
-      padding-top: 2rem;
-      background-color: var(--app-color-primary-10);
-      align-items: center;
-      text-align: center;
-      min-width: 432px;
-      margin: 1rem;
-      border-radius: 0.5rem;
-      margin-bottom: 3rem;
-
-      h2 {
-        width: 70%;
-        margin: 0.25rem 0;
-      }
-
-      .btn {
-        border-radius: 1.5rem;
-        margin-bottom: 0.75rem;
-      }
-    }
-
   }
 
   .feedback {
