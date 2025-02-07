@@ -4,74 +4,123 @@
 @import url(./variaveis.css);
 
 
-main.container {
-  width: 100vw;
-  min-width: 320px;
-}
-
-main.container section.content {
+main {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  align-items: center;
+  gap: 4rem;
+  min-width: 300px;
 }
 
-main.container section.content article {
-  width: 84%;
-}
-
-main.container section.content article.first {
+main section  {
   display: flex;
   flex-direction: column;
+  gap: 3rem;
+
+  .with-backg  {
+    background: linear-gradient(135deg, var(--app-color-primary-30), var(--app-color-primary-50));
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: 0px 20px 32px 2px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    max-width: 84%;
+
+    img {
+      max-width: 75%;
+    }
+  }
+}
+
+
+main section article {
+  width: 85%;
+}
+
+.col-reverse {
+  flex-direction: column-reverse;
+}
+
+
+main section .first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: left;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
-main.container section.content article.second {
+main section .second.with-img {
   width: 100%;
+
   .titles {
     width: 84%;
   }
 }
 
-main.container section.content article.first.center {
+main section .first#center {
+  gap: 2.5rem;
   align-items: center;
   text-align: center;
+
+  h1 {
+    span {
+      color: var(--app-color-secondary);
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+  }
 }
 
-main.container section.content article.first.center .date-and-time {
+main section .first#center .date-and-time {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-main.container section.content article.first.center .date,
-main.container section.content article.first.center .time {
+main section .first#center .date,
+main section .first#center .time {
   display: flex;
   align-items: center;
   gap: 0.75rem;
 }
 
+main section .first .item {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 0.625rem;
+  width: 95%;
 
-main.container section.content article.second,
-main.container section.content article.second .titles {
+  .emoji {
+    translate: 0px 3px;
+  }
+}
+
+
+
+main section .second,
+main section .second .titles {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
 
   .titles {
+    padding: 1.5rem 0 0.25rem 0;
     gap: 1.5rem;
 
     h4 {
       background-color: rgb(var(--app-color-primary-rgb), 0.16);
       font-size: 0.875rem;
-      max-width: 350px;
-      padding: 0.75rem 3rem;
+      width: 280px;
+      padding: 0.25rem 0;
     }
 
     h2 {
       font-size: 1.75rem;
       max-width: 350px;
+      background: var(--app-color-secondary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     .btn {
@@ -79,9 +128,9 @@ main.container section.content article.second .titles {
       font-size: 0.875rem;
       font-weight: bold;
       text-transform: uppercase;
+      padding: 0.75rem 1rem;
       border: 1px solid var(--app-color-primary-shade);
       border-radius: 1.25rem;
-      padding: 0.75rem 1.5rem;
     }
 
     .btn:hover {
@@ -90,186 +139,28 @@ main.container section.content article.second .titles {
       transition: 0.5s;
     }
   }
-}
 
-
-
-
-
-
-
-
-
-
-
-
-/*
-article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 1.25rem;
-}
-
-section article a {
-  width: 95%;
-  align-self: center;
-}
-
-
-
-
-
- Configurações da imagem de fundo nas imagens com a classe "with-backg(background)" 
-
-.with-backg  {
-  background: linear-gradient(135deg, var(--app-color-primary-30), var(--app-color-primary-50));
-  align-items: center;
-  border-radius: 0.5rem;
-  box-shadow: 0px 20px 32px 2px rgba(0, 0, 0, 0.1);
-}
-
-.with-backg img {
-  width: 75%;
-}
-
- Configurações da primeira section: class "home"
-
-.home {
-
-
- Article home-1
-  .home-1 {
-    h1 {
-
-      span {
-        color: var(--app-color-secondary);
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-      }
-    }
-
-    .date-and-time {
-      display: flex;
-      flex-direction: column;
-  
-      gap: 0.825rem;
-    }
-
-    .date-and-time p {
-      display: flex;
-      align-items: center;
-    }
-
-    .date-and-time svg {
-  
-    }
-
-    a {
-  
-  
-    }
-
-    a:hover {
-      background-color: var(--app-color-secondary-dark);
-      box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
-    }
-
-    a:active {
-      background-color: var(--app-color-secondary-shade);
-      box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
-    }
-  }
-
- Article home-2 
-  #home-2 {
-
-
-
-
-    h4 {
-      background-color: rgb(var(--app-color-primary-rgb), 0.16);
-      font-size: 0.875rem;
-      width: 72%;
-    }
-
-    h2 {
-      font-size: 1.75rem;
-      width: 80%;
-      background: var(--app-color-secondary);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-
-    img {
-      width: 100%;
-    }
+  img {
+    width: 100%;
   }
 }
 
- Configurações da section: class "benefits" e class "for-whom" 
-.benefits,
-.for-whom {
-  gap: 0.75rem;
+main section.content-sub .first,
+main section.content-sub .second {
 
-  #benefits-2,
-  #for-whom-1 {
-    align-items: start;
-    gap: 1rem;
-
-
-    h2 {
-      text-align: left;
-    }
-
-    .item {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      gap: 0.75rem;
-  
-
-      img .translate {
-        translate: 0px 2px;
-      }
-
-      p {
-        text-align: justify;
-    
-      }
-    }
-  }
-}
-
- Configurações da section: class "about-us" 
-.about-us {
-
-  .about article {
-
-
-    p {
-  
-      text-align: justify;
-    }
-  }
-}
-
-
- Configurações da section: class "faq" 
-
-.faq {
-  ul {
-    max-width: 700px;
-
-  }
-
-  li h3 {
-
+  h1 {
+    text-align: center;
   }
 
   p {
+    width: 95%;
+    text-align: justify;
+  }
+}
 
+main section.feedback {
+  img {
+    width: 100%;
   }
 }
 
@@ -288,151 +179,121 @@ section article a {
 
 
 
-
-
-
- Configurações para telas maior que 490px de largura, celulares maiores e tablets pequenos 
 
 @media only screen and (min-width: 490px) {
   main {
     max-width: 521px;
-
-
-
-
     box-shadow: 0px 0px 30px 16px rgba(var(--app-color-secondary-rgb), 0.3);
   }
 
-  .separator {
+  main section {
+    gap: 4rem;
 
+    article {
+      max-width: 440px;
+    }
   }
 
-  section article {
-    gap: 1rem;
-
-    flex: 1;
+  main .separator {
+    translate: -2rem 0px;
   }
 
-  .home, .about {
+  main section .second {
+    background-color: var(--app-color-primary-10);
+    border-radius: 0.5rem;
 
-  }
+    .btn {
+      border-radius: 1.5rem;
+    }
 
-  section article#home-2 {
-  
-      background-color: var(--app-color-primary-10);
-      align-items: center;
-      text-align: center;
-      min-width: 432px;
+    img {
       border-radius: 0.5rem;
-  
-
-      h2 {
-        width: 70%;
-    
-      }
-
-      .btn {
-        border-radius: 1.5rem;
-    
-      }
-
-      img {
-        border-radius: 0.5rem;
-      }
+    }
   }
 }
-
-
-
- Configurações para telas maior que 870px de largura, tablets e monitores 
 
 @media only screen and (min-width: 870px) {
   main {
     max-width: 1024px;
-
-
   }
 
-  section article a {
-    align-self: self-start;
-  }
-
-  .home, .benefits, .for-whom, .about {
+  main section {
     flex-direction: row;
-    justify-content: space-around;
-    gap: 1rem;
+    align-items: center;
+  }
 
+  .row-reverse {
+    flex-direction: row;
   }
   
-  .benefits, .for-whom {
-    align-items: center;
-  }
-
-  .home article,
-  .benefits article#benefits-2,
-  .for-whom article#for-whom-1 {
-    align-items: start;
-    gap: 1rem;
-    text-align: left;
-
-    flex: 1;
-  }
-
-  .benefits,
-  .for-whom  {
-    align-items: center;
-
-
-
-
-    #benefits-2,
-    #for-whom-1 {
-      h2 {
-    
-      }
-      a {
-        align-self: center;
-      }
-    }
-  }
-
-  .home div svg {
-
-  }
-
-
-
-  .home {
-    .home-1 {
-        h1 {
-        text-align: start;
-      }
-
-      .separator {
-        align-self: self-start;
-      }
-    }
-  }
-
-  .separator {
-
-  }
-
-  .feedback {
-    max-width: 700px;
-    flex-direction: column;
-
-  }
-
-  .about-us .about.reverse {
+  .col-reverse {
     flex-direction: row-reverse;
   }
 
-  .about-us .separator.mini {
-
+  main section article {
+    width: 100%;
   }
 
-  .about {
-
+  main section .first {
+      align-items: stretch;
   }
-} */
+
+  main section .first#center {
+    align-items: start;
+    text-align: left;
+  }
+
+  main section .first .item {
+    width: 100%;
+  }
+
+  main section .second,
+  main section .second .titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    .titles {
+      padding: 1.5rem 0 0.25rem 0;
+      gap: 1.5rem;
+  
+      h4 {
+        background-color: rgb(var(--app-color-primary-rgb), 0.16);
+        font-size: 0.875rem;
+        width: 280px;
+        padding: 0.25rem 0;
+      }
+  
+      h2 {
+        font-size: 1.75rem;
+        max-width: 350px;
+        background: var(--app-color-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+  
+      .btn {
+        color:  var(--app-color-primary-shade);
+        font-size: 0.875rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 0.75rem 1rem;
+        border: 1px solid var(--app-color-primary-shade);
+        border-radius: 1.25rem;
+      }
+  
+      .btn:hover {
+        background-color: var(--app-color-primary-shade);
+        color: var(--app-color-light-tint);
+        transition: 0.5s;
+      }
+    }
+  
+    img {
+      width: 100%;
+    }
+  }
+
+}
+

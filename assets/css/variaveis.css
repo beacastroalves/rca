@@ -53,6 +53,8 @@
   --app-font-mont: 'Montserrat', sans-serif;
   --app-font-noto: 'Noto Serif', serif;
 
+  --app-row-reverse: row-reverse;
+  --app-col-reverse: column-reverse;
 
   --app-color-sucess: #2b990a;
   --app-color-sucess-contrast: #000000;
