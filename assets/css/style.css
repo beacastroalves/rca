@@ -163,6 +163,18 @@ article {
   }
 }
 
+.faq ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
 
 
 
