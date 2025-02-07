@@ -1,26 +1,115 @@
 @charset "UTF-8";
 
+@import url(./global.css);
 @import url(./variaveis.css);
 
-main {
+
+main.container {
   width: 100vw;
-  margin: 0 auto;
   min-width: 320px;
 }
 
-section {
+main.container section.content {
   display: flex;
   flex-direction: column;
-  padding: 1rem 0;
+  gap: 2rem;
 }
 
+main.container section.content article {
+  width: 84%;
+}
+
+main.container section.content article.first {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 2rem;
+}
+
+main.container section.content article.second {
+  width: 100%;
+  .titles {
+    width: 84%;
+  }
+}
+
+main.container section.content article.first.center {
+  align-items: center;
+  text-align: center;
+}
+
+main.container section.content article.first.center .date-and-time {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+main.container section.content article.first.center .date,
+main.container section.content article.first.center .time {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+
+main.container section.content article.second,
+main.container section.content article.second .titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  .titles {
+    gap: 1.5rem;
+
+    h4 {
+      background-color: rgb(var(--app-color-primary-rgb), 0.16);
+      font-size: 0.875rem;
+      max-width: 350px;
+      padding: 0.75rem 3rem;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+      max-width: 350px;
+    }
+
+    .btn {
+      color:  var(--app-color-primary-shade);
+      font-size: 0.875rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      border: 1px solid var(--app-color-primary-shade);
+      border-radius: 1.25rem;
+      padding: 0.75rem 1.5rem;
+    }
+
+    .btn:hover {
+      background-color: var(--app-color-primary-shade);
+      color: var(--app-color-light-tint);
+      transition: 0.5s;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 article {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   gap: 1.25rem;
-  padding: 1rem;
 }
 
 section article a {
@@ -28,45 +117,30 @@ section article a {
   align-self: center;
 }
 
-.separator {
-  width: 100%;
-  height: 5px;
-  background-image: linear-gradient(to left, transparent 0%, var(--app-color-secondary-tint) 100%);
-  margin: 2.5rem -0.5rem 2rem -0.5rem;
-}
 
-.separator.mini {
-  align-self: center;
-  background-image: none;
-  background-color: var(--app-color-secondary);
-  width: 200px;
-  margin: 1.5rem auto;
-}
 
-/* Configurações da imagem de fundo nas imagens com a classe "with-backg(background)" */
+
+
+ Configurações da imagem de fundo nas imagens com a classe "with-backg(background)" 
 
 .with-backg  {
   background: linear-gradient(135deg, var(--app-color-primary-30), var(--app-color-primary-50));
   align-items: center;
   border-radius: 0.5rem;
-  margin: 1rem;
   box-shadow: 0px 20px 32px 2px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2rem;
-  padding: 1rem;
 }
 
 .with-backg img {
   width: 75%;
 }
 
-/* Configurações da primeira section: class "home" */
+ Configurações da primeira section: class "home"
 
 .home {
-  padding: 2rem 0 1rem 0;
 
 
-/* Article home-1 */
-  #home-1 {
+ Article home-1
+  .home-1 {
     h1 {
 
       span {
@@ -78,7 +152,7 @@ section article a {
     .date-and-time {
       display: flex;
       flex-direction: column;
-      padding: 1.2rem 0;
+  
       gap: 0.825rem;
     }
 
@@ -88,12 +162,12 @@ section article a {
     }
 
     .date-and-time svg {
-      margin-right: 0.75rem;
+  
     }
 
     a {
-      margin-bottom: 3rem;
-      margin-top: 0;
+  
+  
     }
 
     a:hover {
@@ -107,44 +181,26 @@ section article a {
     }
   }
 
-/* Article home-2 */
+ Article home-2 
   #home-2 {
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
+
+
+
 
     h4 {
-      background-color: var(--app-color-primary-30);
+      background-color: rgb(var(--app-color-primary-rgb), 0.16);
       font-size: 0.875rem;
       width: 72%;
-      padding: 0.25rem 0;
     }
 
     h2 {
       font-size: 1.75rem;
       width: 80%;
-      margin: 0.5rem 0 0.25rem 0;
       background: var(--app-color-secondary);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
-    .btn {
-      color:  var(--app-color-primary-shade);
-      font-size: 0.875rem;
-      font-weight: bold;
-      text-transform: uppercase;
-      padding: 0.75rem 1rem;
-      margin-bottom: 1rem;
-      border: 1px solid var(--app-color-primary-shade);
-      border-radius: 1.25rem;
-    }
-
-    .btn:hover {
-      background-color: var(--app-color-primary-shade);
-      color: var(--app-color-light-tint);
-      transition: 0.5s;
-    }
 
     img {
       width: 100%;
@@ -152,66 +208,68 @@ section article a {
   }
 }
 
-/* Configurações da section: class "benefits" */
-.benefits {
-  padding: 0 1rem;
+ Configurações da section: class "benefits" e class "for-whom" 
+.benefits,
+.for-whom {
   gap: 0.75rem;
-  text-align: left;
 
-  #benefits-2 {
+  #benefits-2,
+  #for-whom-1 {
     align-items: start;
     gap: 1rem;
-    text-align: justify;
-    padding: 0 1.5rem;
+
 
     h2 {
       text-align: left;
     }
+
+    .item {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 0.75rem;
+  
+
+      img .translate {
+        translate: 0px 2px;
+      }
+
+      p {
+        text-align: justify;
+    
+      }
+    }
   }
 }
 
-/* Configurações da section: class "for-whom" */
-.for-whom {
-  padding: 0 1rem;
-  gap: 0.75rem;
-
-  #for-whom-1 {
-    align-items: start;
-    text-align: justify;
-  }
-}
-
-
-
-/* Configurações da section: class "about-us" */
+ Configurações da section: class "about-us" 
 .about-us {
-  padding: 0 1rem;
 
   .about article {
-    margin-bottom: 2rem;
+
 
     p {
-      padding: 0 1rem;
+  
       text-align: justify;
     }
   }
 }
 
 
-/* Configurações da section: class "faq" */
+ Configurações da section: class "faq" 
 
 .faq {
   ul {
     max-width: 700px;
-    margin: 0 auto;
+
   }
 
   li h3 {
-    padding: 1rem;
+
   }
 
   p {
-    margin-left: 1rem;
+
   }
 }
 
@@ -233,50 +291,49 @@ section article a {
 
 
 
-/* Configurações para telas maior que 490px de largura, celulares maiores e tablets pequenos */
+ Configurações para telas maior que 490px de largura, celulares maiores e tablets pequenos 
 
 @media only screen and (min-width: 490px) {
   main {
     max-width: 521px;
-    margin: 0 auto;
-    padding-top: 2rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
+
+
+
+
     box-shadow: 0px 0px 30px 16px rgba(var(--app-color-secondary-rgb), 0.3);
   }
 
   .separator {
-    margin: 2.5rem -2rem 2rem -2rem;
+
   }
 
   section article {
     gap: 1rem;
-    padding: 1.5rem;
+
     flex: 1;
   }
 
-  .home, .benefits, .for-whom, .about {
-    padding: 0 1rem;
+  .home, .about {
+
   }
 
   section article#home-2 {
-      padding-top: 2rem;
+  
       background-color: var(--app-color-primary-10);
       align-items: center;
       text-align: center;
       min-width: 432px;
-      margin: 1rem;
       border-radius: 0.5rem;
-      margin-bottom: 3rem;
+  
 
       h2 {
         width: 70%;
-        margin: 0.25rem 0;
+    
       }
 
       .btn {
         border-radius: 1.5rem;
-        margin-bottom: 0.75rem;
+    
       }
 
       img {
@@ -287,13 +344,13 @@ section article a {
 
 
 
-/* Configurações para telas maior que 870px de largura, tablets e monitores */
+ Configurações para telas maior que 870px de largura, tablets e monitores 
 
 @media only screen and (min-width: 870px) {
   main {
     max-width: 1024px;
-    margin: 0 auto;
-    padding: 2.5rem 0 1rem 0;
+
+
   }
 
   section article a {
@@ -303,32 +360,50 @@ section article a {
   .home, .benefits, .for-whom, .about {
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
     gap: 1rem;
-    padding: 0 2rem;
+
+  }
+  
+  .benefits, .for-whom {
+    align-items: center;
   }
 
   .home article,
-  .benefits article#benefits-2 {
+  .benefits article#benefits-2,
+  .for-whom article#for-whom-1 {
     align-items: start;
     gap: 1rem;
     text-align: left;
-    padding: 0 1.5rem;
+
     flex: 1;
   }
 
-  .benefits article#benefits-2 {
-    margin-bottom: 2rem;
+  .benefits,
+  .for-whom  {
+    align-items: center;
+
+
+
+
+    #benefits-2,
+    #for-whom-1 {
+      h2 {
+    
+      }
+      a {
+        align-self: center;
+      }
+    }
   }
 
   .home div svg {
-    margin-right: 1rem;
+
   }
 
 
 
   .home {
-    #home-1 {
+    .home-1 {
         h1 {
         text-align: start;
       }
@@ -340,13 +415,13 @@ section article a {
   }
 
   .separator {
-    margin: 2.5rem 0 2rem 0;
+
   }
 
   .feedback {
     max-width: 700px;
     flex-direction: column;
-    margin: 0 auto;
+
   }
 
   .about-us .about.reverse {
@@ -354,10 +429,10 @@ section article a {
   }
 
   .about-us .separator.mini {
-    margin: 2.5rem auto;
+
   }
 
   .about {
-    padding: 0 1rem;
+
   }
-}
+} */

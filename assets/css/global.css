@@ -1,8 +1,6 @@
 @charset "UTF-8";
 @import url(./variaveis.css);
 
-
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,33 +9,32 @@
 }
 
 html, body {
-  font-family: var(--app-font-noto);
-  font-family: var(--app-font-mont);
   min-width: 350px;
-  color: var(--app-color-secondary);
+  font-family: var(--app-font-noto);
   background-color: var(--app-color-light-tint);
+  color: var(--app-color-secondary);
+  text-align: center;
 }
 
 h1 {
   font-size: 1.5rem;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
-  text-align: center;
 }
+
 
 h1, p {
   color: var(--app-color-text);
 }
 
+
 h2 {
-  text-align: center;
-  margin: 1rem 0;
   background: var(--app-color-secondary);
   background: radial-gradient(circle farthest-side at center center, var(--app-color-secondary) 0%, var(--app-color-secondary-shade) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-a {
+.btn-primary {
   background-color: var(--app-color-secondary);
   color: var(--app-color-light);
   text-align: center;
@@ -46,19 +43,31 @@ a {
   padding: 0.75rem 1.5rem;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
   border-radius: 0.625rem;
-  margin: 1.5rem 0;
 }
 
-a:hover {
+.btn-primary:hover {
   background-color: var(--app-color-secondary-dark);
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
 }
 
-a:active {
+.btn-primary:active {
   background-color: var(--app-color-secondary-shade);
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
 }
 
+.separator {
+  height: 5px;
+  width: 100%;
+  background-image: linear-gradient(to left, transparent 0%, var(--app-color-secondary-tint) 100%);
+}
+
+.separator-mini {
+  height: 5px;
+  width: 200px;
+  background-color: var(--app-color-secondary);
+}
+
+/*
 
 .fb-img {
   width: 80%;
@@ -67,7 +76,6 @@ a:active {
 
 ul, li {
   list-style: none;
-  padding: 1rem;
-}
+} */
 
 
