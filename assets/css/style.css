@@ -36,7 +36,7 @@ main section article {
   width: 85%;
 }
 
-.col-reverse {
+main section.col-reverse {
   flex-direction: column-reverse;
 }
 
@@ -222,11 +222,9 @@ main section.feedback {
     align-items: center;
   }
 
-  .row-reverse {
-    flex-direction: row;
-  }
-  
-  .col-reverse {
+
+  main section.col-reverse,
+  main section.reverse {
     flex-direction: row-reverse;
   }
 
@@ -247,52 +245,9 @@ main section.feedback {
     width: 100%;
   }
 
-  main section .second,
-  main section .second .titles {
-    display: flex;
+  main section.content.about-us,
+  main section.content.faq {
     flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-
-    .titles {
-      padding: 1.5rem 0 0.25rem 0;
-      gap: 1.5rem;
-  
-      h4 {
-        background-color: rgb(var(--app-color-primary-rgb), 0.16);
-        font-size: 0.875rem;
-        width: 280px;
-        padding: 0.25rem 0;
-      }
-  
-      h2 {
-        font-size: 1.75rem;
-        max-width: 350px;
-        background: var(--app-color-secondary);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-  
-      .btn {
-        color:  var(--app-color-primary-shade);
-        font-size: 0.875rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        padding: 0.75rem 1rem;
-        border: 1px solid var(--app-color-primary-shade);
-        border-radius: 1.25rem;
-      }
-  
-      .btn:hover {
-        background-color: var(--app-color-primary-shade);
-        color: var(--app-color-light-tint);
-        transition: 0.5s;
-      }
-    }
-  
-    img {
-      width: 100%;
-    }
   }
 
 }
