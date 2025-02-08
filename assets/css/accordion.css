@@ -1,0 +1,84 @@
+.accordions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  .accordion {
+    h3 {
+      background-color: transparent;
+      color: var(--app-color-secondary);
+      border: 1px solid var(--app-color-secondary);
+      padding: 0.75rem 2rem;
+      border-radius: 2px;
+      font-size: 1rem;
+
+      &:hover {
+        background-color: var(--app-color-secondary-shade);
+        color: var(--app-color-light-tint);
+        border-color: var(--app-color-secondary-shade);
+        cursor: pointer;
+      }
+    }
+
+    .accordion-content {
+      max-height: 0;
+      transition: max-height 0.25s;
+      overflow: hidden;
+
+      p {
+        color: var(--app-color-secondary-shade);
+        padding: 0.75rem 2rem;
+        margin: 0.75rem 4px;
+        border-left: 1px solid var(--app-color-secondary-dark);
+        border-right: 1px solid var(--app-color-secondary-dark);
+      }
+    }
+
+    &.open {
+      h3 {
+        background-color: var(--app-color-secondary-dark);
+        color: var(--app-color-light-tint);
+
+        &:hover {
+          background-color: var(--app-color-secondary-shade);
+          color: var(--app-color-light-tint);
+          border-color: var(--app-color-secondary-shade);
+          cursor: pointer;
+        }
+      }
+
+      .accordion-content {
+        max-height: 600px;
+        transition: max-height 1s;
+
+        p {
+          background-color: transparent;
+          text-shadow: 2px 2px 3px rgb(var(--app-color-secondary-rgb), 0.4)
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: 870px) {
+  .accordions {
+    gap: 1rem;
+
+    .accordion {
+      h3 {
+        padding: 0.75rem 3rem;
+        border-radius: 60px;
+      }
+
+      .accordion-content {
+
+        p {
+          color: var(--app-color-secondary-dark);
+          padding: 0.75rem 2rem;
+          margin: 0.5rem 2rem;
+        }
+      }
+    }
+  }
+}

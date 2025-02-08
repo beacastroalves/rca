@@ -26,13 +26,24 @@
   --app-color-secondary-rgb: 196, 165, 130;
   --app-color-secondary-tint: #e4c199;
   --app-color-secondary-dark: #a3896b;
-  --app-color-secondary-shade: #74614c;
+  --app-color-secondary-shade: #91795d;
 
-  --app-color-secondary-90: rgb(196, 165, 130, 0.9);
-  --app-color-secondary-70: rgb(196, 165, 130, 0.7);
-  --app-color-secondary-50: rgb(196, 165, 130, 0.5);
-  --app-color-secondary-30: rgb(196, 165, 130, 0.3);
-  --app-color-secondary-10: rgb(196, 165, 130, 0.1);
+
+  --color-secondary-20: #ffedd8;
+  --color-secondary-30: #ecd2b5;
+  --color-secondary-40: #e4c199;
+  --color-secondary-60: #d3b089;
+  --color-secondary-80: #C4A582;
+  --color-secondary-90: #9b8266;
+  --color-secondary-100: #74614c;
+
+
+  --app-rgb-secondary-90: rgb(196, 165, 130, 0.9);
+  --app-rgb-secondary-70: rgb(196, 165, 130, 0.7);
+  --app-rgb-secondary-50: rgb(196, 165, 130, 0.5);
+  --app-rgb-secondary-30: rgb(196, 165, 130, 0.3);
+  --app-rgb-secondary-10: rgb(196, 165, 130, 0.1);
+
 
   --app-color-light: #ebebeb;
   --app-color-light-tint: #eeeeee;
@@ -63,4 +74,8 @@
   --app-color-danger: #a82200;
   --app-color-danger-shade: #7e1900;
   --app-color-danger-contrast: #ffffff;
+
+
+  
+
 }

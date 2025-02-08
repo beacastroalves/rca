@@ -97,6 +97,12 @@ article {
   }
 }
 
+.first#faq {
+  h2 {
+    align-self: center;
+  }
+}
+
 .second,
 .second .titles {
   display: flex;
@@ -128,20 +134,14 @@ article {
     -webkit-text-fill-color: transparent;
   }
 
-.btn {
-  color:  var(--app-color-primary-shade);
-  font-size: 0.875rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 0.75rem 1rem;
-  border: 1px solid var(--app-color-primary-shade);
-  border-radius: 1.25rem;
-}
-
-  .btn:hover {
-    background-color: var(--app-color-primary-shade);
-    color: var(--app-color-light-tint);
-    transition: 0.5s;
+  .btn {
+    color:  var(--app-color-primary-shade);
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--app-color-primary-shade);
+    border-radius: 1.25rem;
   }
 }
 
@@ -160,18 +160,6 @@ article {
 .feedback {
   img {
     width: 100%;
-  }
-}
-
-.faq ul {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-
-  li {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
   }
 }
 
@@ -195,6 +183,7 @@ article {
       max-width: 440px;
     }
   }
+
 
   main .separator {
     translate: -2rem 0px;
@@ -232,6 +221,10 @@ article {
 
   main section article {
     width: 100%;
+
+    &#faq {
+      min-width: 570px;
+    }
   }
 
   main section .first {
@@ -247,9 +240,7 @@ article {
     width: 100%;
   }
 
-  main section.content.about-us,
-  main section.content.faq {
+  main section.content.about-us{
     flex-direction: column;
   }
 }
-
