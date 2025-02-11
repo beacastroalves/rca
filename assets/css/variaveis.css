@@ -1,81 +1,29 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('./fonts.css');
 
 :root {
+  --app-font-noto: 'Noto Serif', serif;
 
   --app-color-text: #616161;
   --app-color-text-rgb:  97, 97, 97;
-  --app-color-text-tint: #919191;
-  --app-color-text-dark: #414141;
-  --app-color-text-shade: #212121;
+
+  --app-color-lightgray: #ebebeb;
+  --app-color-lightgray-tint: #eeeeee;
+  --app-color-lightgray-shade: #d0d0d0;
 
   --app-color-primary: #9a949b;
   --app-color-primary-rgb: 154, 148, 155;
+  --app-color-primary-10: rgb(var(--app-color-primary-rgb), 0.1);
+  --app-color-primary-30: rgb(var(--app-color-primary-rgb), 0.3);
+  --app-color-primary-50: rgb(var(--app-color-primary-rgb), 0.5);
   --app-color-primary-tint: #cac4cb;
   --app-color-primary-dark: #8e898e;
   --app-color-primary-shade: #5e595e;
-
-  --app-color-primary-90: rgb(154, 148, 155, 0.9);
-  --app-color-primary-70: rgb(154, 148, 155, 0.7);
-  --app-color-primary-50: rgb(154, 148, 155, 0.5);
-  --app-color-primary-30: rgb(154, 148, 155, 0.3);
-  --app-color-primary-10: rgb(154, 148, 155, 0.1);
 
   --app-color-secondary: #C4A582;
   --app-color-secondary-rgb: 196, 165, 130;
   --app-color-secondary-tint: #e4c199;
   --app-color-secondary-dark: #a3896b;
   --app-color-secondary-shade: #91795d;
-
-
-  --color-secondary-20: #ffedd8;
-  --color-secondary-30: #ecd2b5;
-  --color-secondary-40: #e4c199;
-  --color-secondary-60: #d3b089;
-  --color-secondary-80: #C4A582;
-  --color-secondary-90: #9b8266;
-  --color-secondary-100: #74614c;
-
-
-  --app-rgb-secondary-90: rgb(196, 165, 130, 0.9);
-  --app-rgb-secondary-70: rgb(196, 165, 130, 0.7);
-  --app-rgb-secondary-50: rgb(196, 165, 130, 0.5);
-  --app-rgb-secondary-30: rgb(196, 165, 130, 0.3);
-  --app-rgb-secondary-10: rgb(196, 165, 130, 0.1);
-
-
-  --app-color-light: #ebebeb;
-  --app-color-light-tint: #eeeeee;
-  --app-color-light-shade: #d0d0d0;
-  --app-color-light-constrast: #000000;
-
-  --app-color-medium: #bbbbbb;
-  --app-color-medium-tint: #cccccc;
-  --app-color-medium-shade: #a0a0a0;
-  --app-color-medium-constrast: #000000;
-
-  --app-color-dark: #414141;
-  --app-color-dark-tint: #5e5e5e;
-  --app-color-dark-shade: #1d1d1d;
-  --app-color-dark-constrast: #ffffff;
-
-
-  --app-font-mont: 'Montserrat', sans-serif;
-  --app-font-noto: 'Noto Serif', serif;
-
-  --app-row-reverse: row-reverse;
-  --app-col-reverse: column-reverse;
-
-  --app-color-sucess: #2b990a;
-  --app-color-sucess-contrast: #000000;
-  --app-color-warning: #928d02;
-  --app-color-warning-contrast: #000000;
-  --app-color-danger: #a82200;
-  --app-color-danger-shade: #7e1900;
-  --app-color-danger-contrast: #ffffff;
-
-
-  
-
 }

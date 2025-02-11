@@ -8,10 +8,11 @@
   user-select: none;
 }
 
-html, body {
+html,
+body {
   min-width: 350px;
   font-family: var(--app-font-noto);
-  background-color: var(--app-color-light-tint);
+  background-color: var(--app-color-lightgray-tint);
   color: var(--app-color-secondary);
   text-align: center;
 }
@@ -36,7 +37,7 @@ h2 {
 
 .btn-primary {
   background-color: var(--app-color-secondary);
-  color: var(--app-color-light);
+  color: var(--app-color-lightgray);
   text-align: center;
   text-decoration: none;
   font-weight: bold;
@@ -44,6 +45,7 @@ h2 {
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
   border-radius: 0.625rem;
   width: 100%;
+  transition: background-color 0.2s, box-shadow 0.2s;
 }
 
 .btn-primary:hover {
@@ -68,7 +70,8 @@ h2 {
   background-color: var(--app-color-secondary);
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
 }
 
@@ -76,7 +79,3 @@ ul, li {
   width: 80%;
   box-shadow: 1px 1px 14px 2px rgba(0, 0, 0, 0.2);
 }
-
-
-
-

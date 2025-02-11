@@ -1,17 +1,14 @@
 main {
   margin: 0 auto;
-  padding: 3rem 0 4rem 0;
+  padding: 3rem 0 4rem; /* Simplificado */
 }
 
 main .separator-mini {
   margin: 0 auto;
 }
 
-main section.content {
-
-  .with-backg  {
-    margin: 0 auto;
-  }
+main section.content .with-backg { /* Simplificado o seletor */
+  margin: 0 auto;
 }
 
 main section.content article.first,
@@ -19,26 +16,18 @@ main section.content article.second {
   margin: 0 auto;
 }
 
-
 @media only screen and (min-width: 490px) {
   main {
-    padding-right: 2rem;
-    padding-left: 2rem;
-  }
-
-  main .separator-mini {
-    margin: 0 auto;
+      padding: 3rem 2rem 4rem; /* Simplificado */
   }
 }
 
-
 @media only screen and (min-width: 870px) {
   main {
-    padding-right: 3rem;
-    padding-left: 3rem;
+      padding: 3rem; /* Simplificado */
   }
 
   main .separator-mini {
-    margin: 0;
+      margin: 0;
   }
 }
