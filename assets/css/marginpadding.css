@@ -1,13 +1,13 @@
 main {
   margin: 0 auto;
-  padding: 3rem 0 4rem; /* Simplificado */
+  padding: 3rem 0 0;
 }
 
 main .separator-mini {
   margin: 0 auto;
 }
 
-main section.content .with-backg { /* Simplificado o seletor */
+main section.content .with-backg {
   margin: 0 auto;
 }
 
@@ -18,13 +18,14 @@ main section.content article.second {
 
 @media only screen and (min-width: 490px) {
   main {
-      padding: 3rem 2rem 4rem; /* Simplificado */
+      padding: 3rem 2rem 0;
   }
 }
 
 @media only screen and (min-width: 870px) {
   main {
-      padding: 3rem; /* Simplificado */
+      padding: 3rem;
+      padding-bottom: 0;
   }
 
   main .separator-mini {

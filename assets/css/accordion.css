@@ -13,11 +13,11 @@
       border-radius: 2px;
       font-size: 1rem;
       box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.08);
-      transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s; /* Adicionado transições */
-      cursor: pointer; /* Cursor pointer sempre ativo */
+      transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+      cursor: pointer;
   }
 
-  h3:hover { /* Simplificado o seletor */
+  h3:hover {
       background-color: var(--app-color-secondary-shade);
       color: var(--app-color-lightgray-tint);
       border-color: var(--app-color-secondary-shade);
@@ -27,10 +27,10 @@
   .accordion-content {
       max-height: 0;
       overflow: hidden;
-      transition: max-height 0.25s ease-in-out; /* Adicionado easing */
+      transition: max-height 0.25s ease-in-out;
   }
 
-  .accordion-content p { /* Simplificado o seletor */
+  .accordion-content p {
       color: var(--app-color-secondary-shade);
       padding: 0.75rem 2rem;
       margin: 0.5rem 4px;
@@ -38,18 +38,18 @@
       border-right: 1px solid var(--app-color-secondary-dark);
   }
 
-  &.open h3 { /* Simplificado o seletor */
+  &.open h3 {
       background-color: var(--app-color-secondary-dark);
       color: var(--app-color-lightgray-tint);
       border-color: var(--app-color-secondary-dark);
   }
 
-  &.open .accordion-content { /* Simplificado o seletor */
-      max-height: 600px; /* Valor fixo, considerar usar max-content se o conteúdo for dinâmico */
-      transition: max-height 0.5s ease-in-out; /* Ajustado a transição e easing */
+  &.open .accordion-content {
+      max-height: 600px;
+      transition: max-height 0.5s ease-in-out;
   }
 
-  &.open .accordion-content p { /* Simplificado o seletor */
+  &.open .accordion-content p {
       background-color: transparent;
       text-shadow: 2px 2px 3px rgb(var(--app-color-secondary-rgb), 0.4);
   }
@@ -60,12 +60,12 @@
       gap: 1rem;
   }
 
-  .accordion h3 { /* Simplificado o seletor */
+  .accordion h3 {
       padding: 0.75rem 3rem;
       border-radius: 60px;
   }
 
-  .accordion .accordion-content p { /* Simplificado o seletor */
+  .accordion .accordion-content p {
       color: var(--app-color-secondary-dark);
       padding: 0.75rem 2rem;
       margin: 0.5rem 2rem;
