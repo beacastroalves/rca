@@ -38,6 +38,17 @@
       border-right: 1px solid var(--app-color-secondary-dark);
   }
 
+    .accordion-content p a {
+    color: var(--app-color-secondary-shade);
+    font-weight: bold;
+    text-decoration: none;
+    }
+
+    .accordion-content p a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
   &.open h3 {
       background-color: var(--app-color-secondary-dark);
       color: var(--app-color-lightgray-tint);

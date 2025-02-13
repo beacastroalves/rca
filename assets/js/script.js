@@ -15,3 +15,9 @@ document.querySelectorAll('.accordion .trigger').forEach(trigger => {
     }
   });
 });
+
+
+function copiarEmail(email) {
+  navigator.clipboard.writeText(email);
+  alert("Email copiado para a área de transferência!"); // Ou um feedback visual melhor
+}
