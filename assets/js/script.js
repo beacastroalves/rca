@@ -18,6 +18,29 @@ document.querySelectorAll('.accordion .trigger').forEach(trigger => {
 
 
 function copiarEmail(email) {
-  navigator.clipboard.writeText(email);
-  alert("Email copiado para a área de transferência!"); // Ou um feedback visual melhor
+  copyToClipboard(email);
+
+  const message = document.querySelector('.text-clipboard-backdrop');
+  message.style.display = 'block';
+  message.style.opacity = 1;
+  setTimeout(() => {
+    message.style.opacity = 0;
+    setTimeout(() => {
+      message.style.display = 'none';
+    }, 500);
+  }, 3000);
+}
+
+function copyToClipboard(text) {
+  const textArea = document.createElement("textarea");
+  textArea.value = text;
+  document.body.appendChild(textArea);
+  textArea.focus();
+  textArea.select();
+  try {
+    document.execCommand('copy');
+  } catch (err) {
+    console.error('Unable to copy to clipboard', err);
+  }
+  document.body.removeChild(textArea);
 }

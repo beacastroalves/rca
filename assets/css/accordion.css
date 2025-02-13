@@ -39,14 +39,17 @@
   }
 
     .accordion-content p a {
-    color: var(--app-color-secondary-shade);
-    font-weight: bold;
-    text-decoration: none;
+        color: var(--app-color-secondary-dark);
+        font-weight: bold;
+        text-decoration: none;
+        transition: 0.25s;
     }
 
     .accordion-content p a:hover {
+        color: var(--app-color-secondary-shade);
         cursor: pointer;
         text-decoration: underline;
+        text-shadow: 2px 2px 3px rgba(var(--app-color-secondary-rgb), 0.6);
     }
 
   &.open h3 {
